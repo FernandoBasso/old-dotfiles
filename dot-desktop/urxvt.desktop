@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=urxvt
+Comment=An unicode capable rxvt clone
+Exec=urxvt
+#Icon=utilities-terminal
+Icon=/home/fernando/.dotfiles/imgs/game-ascii-icon.png
+Terminal=false
+Type=Application
+Categories=System;TerminalEmulator;Development;

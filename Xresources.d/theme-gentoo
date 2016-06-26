@@ -1,0 +1,39 @@
+
+! This color theme needs some vim teaking. Add the next lines
+! to ~/.vimrc.
+!
+! colorscheme default
+! highlight MatchParen ctermbg=magenta ctermfg=white
+! highlight Visual ctermbg=235
+! highlight PmenuSel ctermbg=yellow ctermfg=white
+
+theme-gentoo*background: #0f0f0f
+theme-gentoo*foreground: #c8c8c8
+
+!black
+theme-gentoo*color0:  #251f1f
+theme-gentoo*color8:  #5e5e5e
+!red
+theme-gentoo*color1:  #eb4509
+theme-gentoo*color9:  #eb4509
+!green
+theme-gentoo*color2:  #94e76b
+theme-gentoo*color10: #95e76b
+!yellow
+theme-gentoo*color3:  #ffac18
+theme-gentoo*color11: #ffac18
+!blue
+theme-gentoo*color4:  #46aede
+theme-gentoo*color12: #46aede
+!magenta
+theme-gentoo*color5:  #e32c57
+theme-gentoo*color13: #e32c57
+!cyan
+theme-gentoo*color6:  #d6dbac
+theme-gentoo*color14: #d6dbac
+!white
+theme-gentoo*color7:  #efefef
+theme-gentoo*color15: #efefef
+
+
+! vim: set filetype=xdefaults:

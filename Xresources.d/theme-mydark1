@@ -1,0 +1,19 @@
+
+theme-mydark1*color0: #2E2E34
+theme-mydark1*color1: #CCCC00
+theme-mydark1*color2: #4E4E9A
+theme-mydark1*color3: #C4C4A0
+theme-mydark1*color4: #343465
+theme-mydark1*color5: #8BB43A
+theme-mydark1*color6: #96A481
+theme-mydark1*color7: #8842BC
+theme-mydark1*color8: #555557
+theme-mydark1*color9: #EFEF29
+theme-mydark1*color10: #8A8AE2
+theme-mydark1*color11: #FCFCE9
+theme-mydark1*color12: #72729F
+theme-mydark1*color13: #ADAD7F
+theme-mydark1*color14: #34347B
+theme-mydark1*color15: #E76873
+
+! vim: set filetype=xdefaults:

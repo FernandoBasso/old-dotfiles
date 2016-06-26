@@ -1,0 +1,23 @@
+! Colored man pages.
+xterm-dark*foreground: #d0d0d0
+xterm-dark*background: #101010
+xterm-dark*cursorColor: #d0d0d0
+xterm-dark*color0: #101010
+xterm-dark*color1: #960050
+xterm-dark*color2: #66aa11
+xterm-dark*color3: #c47f2c
+xterm-dark*color4: #30309b
+xterm-dark*color5: #7e40a5
+xterm-dark*color6: #3579a8
+xterm-dark*color7: #9999aa
+xterm-dark*color8: #303030
+xterm-dark*color9: #ff0090
+xterm-dark*color10: #80ff00
+xterm-dark*color11: #ffba68
+xterm-dark*color12: #5f5fee
+xterm-dark*color13: #bb88dd
+xterm-dark*color14: #4eb4fa
+xterm-dark*color15: #d0d0d0
+
+
+! vim: set filetype=xdefaults:

@@ -1,0 +1,56 @@
+theme-jedi*background: #0d1926
+theme-jedi*foreground: #d9e6f2
+theme-jedi*iconFile: /home/fernando/.dotfiles/imgs/icon-terminal1.png
+
+! --- standard colors ---
+
+! black
+theme-jedi*color0: #000000
+
+! bright_black
+theme-jedi*color8: #262626
+
+! red
+theme-jedi*color1: #b87a7a
+
+! bright_red
+theme-jedi*color9: #dbbdbd
+
+! green
+theme-jedi*color2: #7ab87a
+
+! bright_green
+theme-jedi*color10: #bddbbd
+
+! yellow
+theme-jedi*color3: #b8b87a
+
+! bright_yellow
+theme-jedi*color11: #dbdbbd
+
+! blue
+theme-jedi*color4: #7a7ab8
+
+! bright_blue
+theme-jedi*color12: #bdbddb
+
+! magenta
+theme-jedi*color5: #b87ab8
+
+! bright_magenta
+theme-jedi*color13: #dbbddb
+
+! cyan
+theme-jedi*color6: #7ab8b8
+
+! bright_cyan
+theme-jedi*color14: #bddbdb
+
+! white
+theme-jedi*color7: #d9d9d9
+
+! bright_white
+theme-jedi*color15: #ffffff
+
+! vim: set filetype=xdefaults:
+

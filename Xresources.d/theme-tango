@@ -1,0 +1,30 @@
+
+*background: #0f0f0f
+*foreground: #c8c8c8
+
+!black
+theme-tango*color0:  #251f1f
+theme-tango*color8:  #5e5e5e
+!red
+theme-tango*color1:  #eb4509
+theme-tango*color9:  #eb4509
+!green
+theme-tango*color2:  #94e76b
+theme-tango*color10: #95e76b
+!yellow
+theme-tango*color3:  #ffac18
+theme-tango*color11: #ffac18
+!blue
+theme-tango*color4:  #46aede
+theme-tango*color12: #46aede
+!magenta
+theme-tango*color5:  #e32c57
+theme-tango*color13: #e32c57
+!cyan
+theme-tango*color6:  #d6dbac
+theme-tango*color14: #d6dbac
+!white
+theme-tango*color7:  #efefef
+theme-tango*color15: #efefef
+
+! vim: set filetype=xdefaults:

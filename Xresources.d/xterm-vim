@@ -1,0 +1,21 @@
+! vim +help\ xterm-color
+xterm-vim*color0:			#000000
+xterm-vim*color1:			#c00000
+xterm-vim*color2:			#008000
+xterm-vim*color3:			#808000
+xterm-vim*color4:			#0000c0
+xterm-vim*color5:			#c000c0
+xterm-vim*color6:			#008080
+xterm-vim*color7:			#c0c0c0
+xterm-vim*color8:			#808080
+xterm-vim*color9:			#ff6060
+xterm-vim*color10:			#00ff00
+xterm-vim*color11:			#ffff00
+xterm-vim*color12:			#8080ff
+xterm-vim*color13:			#ff40ff
+xterm-vim*color14:			#00ffff
+xterm-vim*color15:			#ffffff
+xterm-vim*cursorColor:		Black
+
+! vim: set filetype=xdefaults:
+

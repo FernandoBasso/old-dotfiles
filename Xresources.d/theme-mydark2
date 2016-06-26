@@ -1,0 +1,37 @@
+! https://wiki.mpich.org/mpich/index.php/Configure_xterm_Fonts_and_Colors_for_Your_Eyeball
+
+!BLK Cursor
+theme-mydark2*color0:        #000d18
+theme-mydark2*color8:        #000d18
+!RED Tag
+theme-mydark2*color1:        #e89393
+theme-mydark2*color9:        #e89393
+!GRN SpecialKey
+theme-mydark2*color2:        #9ece9e
+theme-mydark2*color10:       #9ece9e
+!YEL Keyword
+theme-mydark2*color3:        #f0dfaf
+theme-mydark2*color11:       #f0dfaf
+!BLU Number
+theme-mydark2*color4:        #8cd0d3
+theme-mydark2*color12:       #8cd0d3
+!MAG Precondit
+theme-mydark2*color5:        #c0bed1
+theme-mydark2*color13:       #c0bed1
+!CYN Float
+theme-mydark2*color6:        #dfaf8f
+theme-mydark2*color14:       #dfaf8f
+!WHT Search
+theme-mydark2*color7:        #efefef
+theme-mydark2*color15:       #efefef
+!FMT Include, StatusLine, ErrorMsg
+theme-mydark2*colorBD:       #ffcfaf
+theme-mydark2*colorUL:       #ccdc90
+theme-mydark2*colorIT:       #80d4aa
+!TXT Normal, Normal, Cursor
+theme-mydark2*foreground:    #dcdccc
+theme-mydark2*background:    #1f1f1f
+theme-mydark2*cursorColor:   #8faf9f
+
+! vim: set filetype=xdefaults:
+

@@ -1,0 +1,21 @@
+! Molokai theme
+theme-molokai*background: #101010
+theme-molokai*foreground: #d0d0d0
+theme-molokai*color0: #101010
+theme-molokai*color1: #960050
+theme-molokai*color2: #66aa11
+theme-molokai*color3: #c47f2c
+theme-molokai*color4: #30309b
+theme-molokai*color5: #7e40a5
+theme-molokai*color6: #3579a8
+theme-molokai*color7: #9999aa
+theme-molokai*color8: #303030
+theme-molokai*color9: #ff0090
+theme-molokai*color10: #80ff00
+theme-molokai*color11: #ffba68
+theme-molokai*color12: #5f5fee
+theme-molokai*color13: #bb88dd
+theme-molokai*color14: #4eb4fa
+theme-molokai*color15: #d0d0d0
+
+! vim: set filetype=xdefaults:

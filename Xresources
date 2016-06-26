@@ -1,0 +1,67 @@
+Xcursor.theme: Vanilla-DMZ
+
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+! https://bbs.archlinux.org/viewtopic.php?id=184089
+!URxvt.font: xft:Ubuntu Mono:size=20:antialias=true,Common:size=20:antialias=true
+
+URxvt.font: xft:Ubuntu Mono:pixelsize=18:antialias=true:hinting=true,xft:Source Code Pro:pixelsize=18style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.boldFont:       xft:Ubuntu Mono:pixelsize=18:antialias=true:bold:hinting=true
+URxvt.italicFont:     xft:Ubuntu Mono:pixelsize=18:antialias=true:italic:autohint=true:hinting=true
+URxvt.bolditalicFont: xft:Ubuntu Mono:pixelsize=18:antialias=true:bold:italic:autohint=true:hinting=true
+
+
+! Colored man pages.
+URxvt.colorIT:      #87af5f
+URxvt.colorBD:      #d7d7d7
+URxvt.colorUL:      #87afd7
+
+URxvt.internalBorder: 10
+URxvt.borderLess: false
+URxvt.iconFile: /home/fernando/.dotfiles/imgs/icon-terminal1.png
+URxvt.scrollBar: false
+URxvt.transparent: true
+URxvt.shading: 25
+
+! Not necessary with rxvt-unicode-patched from aur.
+!URxvt.letterSpace: -1
+URxvt.saveLines: 8192
+
+URxvt.perl-ext-common: default,resize-font,unichr
+
+URxvt.resize-font.smaller: C-minus
+URxvt.resize-font.bigger: C-plus
+URxvt.resize-font.reset: C-equal
+URxvt.resize-font.show: C-question
+
+
+XTerm*faceName: xft:Source Code Pro:size=13
+XTerm*internalBorder: 5
+XTerm*termName: xterm-256color
+XTerm*locale: true
+XTerm*saveLines: 8192
+XTerm*scrollTtyOutput: false
+XTerm*scrollKey: true
+! double-click to select whole URLs :D
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+#include ".Xresources.d/mytheme1.xrdb"
+#include ".Xresources.d/theme-gentoo"
+
+
+
+
+! https://wiki.archlinux.org/index.php/rxvt-unicode
+! https://wiki.archlinux.org/index.php/Rxvt-unicode/Tips_and_tricks
+! https://wiki.archlinux.org/index.php/Xterm
+! https://wiki.archlinux.org/index.php/X_resources
+!
+! http://scarygliders.net/2011/12/01/customize-xterm-the-original-and-best-terminal/
+!
+! https://www.reddit.com/r/linux/comments/1nmmbn/almost_every_terminal_is_slow_seriously/
+!

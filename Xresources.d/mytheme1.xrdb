@@ -1,0 +1,55 @@
+! vim: set filetype=xdefaults:
+
+! This theme goes well with vim default colorscheme, but somethings
+! need to be tweaked:
+!
+!   colorscheme default
+!   highlight MatchParen ctermbg=2 ctermfg=white
+!   highlight Visual ctermbg=233
+!   highlight PmenuSel ctermbg=yellow ctermfg=white
+!   highlight Comment ctermfg=4
+!   highlight Constant ctermfg=1
+
+
+! special
+theme-mytheme1*foreground:   #93a1a1
+theme-mytheme1*background:   #212121
+theme-mytheme1*cursorColor:  #93a1a1
+
+! black
+theme-mytheme1*color0:       #002b36
+theme-mytheme1*color8:       #657b83
+
+! red
+theme-mytheme1*color1:       #dc322f
+theme-mytheme1*color9:       #dc322f
+
+! green
+theme-mytheme1*color2:       #859900
+theme-mytheme1*color10:      #859900
+
+! yellow
+theme-mytheme1*color3:       #b58900
+theme-mytheme1*color11:      #b58900
+
+! blue
+theme-mytheme1*color4:       #268bd2
+theme-mytheme1*color12:      #268bd2
+
+! magenta
+theme-mytheme1*color5:       #af60ca
+theme-mytheme1*color13:      #af60ca
+
+! cyan
+theme-mytheme1*color6:       #2aa198
+theme-mytheme1*color14:      #2aa198
+
+! white
+theme-mytheme1*color7:       #93a1a1
+theme-mytheme1*color15:      #fdf6e3
+
+
+
+
+
+

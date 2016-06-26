@@ -1,0 +1,30 @@
+
+! Colors
+theme-linux-colors*background: #000000
+theme-linux-colors*foreground: #B2B2B2
+! black
+theme-linux-colors*color0:  #000000
+theme-linux-colors*color8:  #686868
+! red
+theme-linux-colors*color1:  #B21818
+theme-linux-colors*color9:  #FF5454
+! green
+theme-linux-colors*color2:  #18B218
+theme-linux-colors*color10: #54FF54
+! yellow
+theme-linux-colors*color3:  #B26818
+theme-linux-colors*color11: #FFFF54
+! blue
+theme-linux-colors*color4:  #1818B2
+theme-linux-colors*color12: #5454FF
+! purple
+theme-linux-colors*color5:  #B218B2
+theme-linux-colors*color13: #FF54FF
+! cyan
+theme-linux-colors*color6:  #18B2B2
+theme-linux-colors*color14: #54FFFF
+! white
+theme-linux-colors*color7:  #B2B2B2
+theme-linux-colors*color15: #FFFFFF
+
+! vim: set filetype=xdefaults:
