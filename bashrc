@@ -1,12 +1,13 @@
 #! /usr/bin/env bash
 
-# We don't want C-s to lock and terminal (which is unlocked with C-q).
-stty -ixon
 
+# PATH ini ----------------------------------------------------------------------------------------
+
+# The rvm path thing has to be the first, for some reason.
 PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 [ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
 
-PATH="${PATH}:$(ruby -rubygems -e 'puts Gem.user_dir')/bin"
+#PATH="${PATH}:$(ruby -rubygems -e 'puts Gem.user_dir')/bin"
 
 NPM_PACKAGES="${HOME}/bin/node_modules"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
@@ -19,6 +20,25 @@ PATH="${PATH}:$HOME/bin:${HOME}/.dotfiles/bin"
 
 export ANDROID_HOME="${HOME}/bin/android-sdk/"
 export PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+export NVM_DIR="~/bin/nvm/"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+### Added by the Heroku Toolbelt
+export PATH="${PATH}:/usr/local/heroku/bin"
+
+# PATH end ----------------------------------------------------------------------------------------
+
+
+# We don't want C-s to lock and terminal (which is unlocked with C-q).
+stty -ixon
+
 
 
 shopt -s checkwinsize # For hr='=='stuff to work.
@@ -109,11 +129,5 @@ if [[ $(hostname) == 'fernandovbsdev' ]] ; then
     source ~/bin/mysql/logins.bash
 fi
 
-export NVM_DIR="~/bin/nvm/"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-
-### Added by the Heroku Toolbelt
-export PATH="${PATH}:/usr/local/heroku/bin"
 
 
