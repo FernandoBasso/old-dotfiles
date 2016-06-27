@@ -218,7 +218,9 @@ let g:vcoolor_map = '<F8>'
 let g:VimUploaderHostsFile = '~/.vim/vupload-remotes.vim'
 
 " Load some of my own stuff.
-source $HOME/.vim/mystuff/headings.vim
+if hostname() != 'fernandovbsdev'
+    source $HOME/.vim/mystuff/headings.vim
+endif
 
 
 " TagBar

@@ -105,6 +105,10 @@ C_compile_to_bin() {
 source ~/.dotfiles/bash/helpers_functions.bash
 source ~/.dotfiles/bash/prompts.bash
 
+if [[ $(hostname) == 'fernandovbsdev' ]] ; then
+    source ~/bin/mysql/logins.bash
+fi
+
 export NVM_DIR="~/bin/nvm/"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
