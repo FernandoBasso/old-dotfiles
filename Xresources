@@ -32,8 +32,9 @@ URxvt.shading: 25
 !URxvt.letterSpace: -1
 URxvt.saveLines: 8192
 
-URxvt.perl-ext-common: default,resize-font,unichr
+URxvt.perl-ext-common: default,resize-font,unichr,fullscreen
 
+URxvt.keysym.F11: perl:fullscreen:switch
 URxvt.resize-font.smaller: C-minus
 URxvt.resize-font.bigger: C-plus
 URxvt.resize-font.reset: C-equal
