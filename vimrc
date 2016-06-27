@@ -215,7 +215,7 @@ let g:vcoolor_map = '<F8>'
 "
 " Vim-Uploader
 "
-let g:VimUploaderHostsFile = '~/.vim/vupload-remotes.vim'
+let g:VimUploaderHostsFile = '~/.priv/vupload-remotes.vim'
 
 " Load some of my own stuff.
 if hostname() != 'fernandovbsdev'
