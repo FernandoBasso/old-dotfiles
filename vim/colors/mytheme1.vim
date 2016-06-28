@@ -24,3 +24,7 @@ highlight PmenuSel ctermbg=yellow ctermfg=white
 highlight Comment ctermfg=4
 highlight Constant ctermfg=1
 
+" :help hl-Search. It is also used for the current, selected line in
+" the quickfix window (which syntastic uses).
+highlight Search ctermbg=yellow ctermfg=white
+
