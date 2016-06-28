@@ -22,6 +22,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'noah/vim256-color'
 "Plugin 'ryanoasis/vim-devicons'
+Plugin 'file:///~/.vim/bundle/vim-uploader'
 
 call vundle#end()
 
@@ -160,7 +161,14 @@ nnoremap cd :cd %:h<CR>:pwd<CR>
 
 
 colorscheme default
-highlight MatchParen ctermbg=2 ctermfg=white
+
+" mate-terminal default config.
+if $TERM == 'xterm'
+    highlight MatchParen ctermbg=yellow ctermbg=0
+elseif $TERM == 'rxvt-unicode-256color'
+    highlight MatchParen ctermbg=2 ctermfg=white
+endif
+
 highlight Visual ctermbg=233
 highlight PmenuSel ctermbg=yellow ctermfg=white
 highlight Comment ctermfg=4
@@ -171,6 +179,9 @@ if !exists("g:ycm_semantic_triggers")
   let g:ycm_semantic_triggers = {}
 endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
+
+
+let html_no_rendering = 1
 
 "
 " Number sections #[Qn]# to #[Q1]#, #[Q2]#, #[Q3]#, etc.
@@ -215,7 +226,7 @@ let g:vcoolor_map = '<F8>'
 "
 " Vim-Uploader
 "
-let g:VimUploaderHostsFile = '~/.priv/vupload-remotes.vim'
+let g:VimUploaderHostsFile = '~/.priv/remote-hosts.vim'
 
 " Load some of my own stuff.
 if hostname() != 'fernandovbsdev'

@@ -11,7 +11,7 @@
     ~/.Xresources.d: Xresources.d
     ~/.tmux.conf: tmux.conf
     ~/.config/openbox: openbox
-    ~/.config/conky: conky
+    #~/.config/conky: conky
     ~/.vimrc: vimrc
     ~/.gvimrc: gvimrc
 

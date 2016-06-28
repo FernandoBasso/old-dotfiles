@@ -56,7 +56,7 @@ fi
 
 # I like the ‘$ ’ prompt on a line of its own so I have plenty of space on the right to
 # punch in the commands.
-PS1='\n\[\e[1;34m\]\w/ $(date +'%H:%M:%S')${check}\e[0;31m$(__git_ps1 "[ %s ]")\e[0m\[\e[1;35m\]\n\$ \[\e[1;0m\]'
+PS1='\n\[\e[0;34m\]\w/ $(date +'%H:%M:%S')${check}\e[0;31m$(__git_ps1 "[ %s ]")\e[0m\[\e[0;35m\]\n\$ \[\e[1;0m\]'
 
 
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
