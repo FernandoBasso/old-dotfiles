@@ -25,8 +25,8 @@ URxvt.internalBorder: 10
 URxvt.borderLess: false
 URxvt.iconFile: /home/fernando/.dotfiles/imgs/icon-terminal1.png
 URxvt.scrollBar: false
-URxvt.transparent: true
-URxvt.shading: 25
+!URxvt.transparent: true
+!URxvt.shading: 25
 
 ! Not necessary with rxvt-unicode-patched from aur.
 !URxvt.letterSpace: -1

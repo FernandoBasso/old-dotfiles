@@ -349,12 +349,12 @@
   </item>
   <item label="Restart">
     <action name="Execute">
-      <prompt>systemctl reboot</prompt>
+      <command>systemctl reboot</command>
     </action>
   </item>
   <item label="Shutdown">
     <action name="Execute">
-      <prompt>systemct poweroff</prompt>
+      <command>systemctl poweroff</command>
     </action>
   </item>
 </menu>
