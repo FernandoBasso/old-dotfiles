@@ -13,6 +13,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
@@ -166,7 +167,7 @@ colorscheme default
 
 " mate-terminal default config.
 if $TERM == 'xterm'
-    highlight MatchParen ctermbg=yellow ctermbg=0
+    highlight MatchParen cterm=reverse ctermbg=NONE ctermbg=NONE
 elseif $TERM == 'rxvt-unicode-256color'
     highlight MatchParen ctermbg=2 ctermfg=white
 endif
@@ -232,7 +233,7 @@ let g:VimUploaderHostsFile = '~/.priv/remote-hosts.vim'
 
 " Load some of my own stuff.
 if hostname() != 'fernandovbsdev'
-    source $HOME/.vim/mystuff/headings.vim
+    "source $HOME/.vim/mystuff/headings.vim
 endif
 
 

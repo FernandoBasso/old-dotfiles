@@ -13,8 +13,10 @@
     ~/.config/openbox: openbox
     #~/.config/conky: conky
     ~/.vimrc: vimrc
+    ~/.vim: vim
     ~/.gvimrc: gvimrc
     ~/.irbrc: irbrc
+    ~/.emacs: emacs
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
