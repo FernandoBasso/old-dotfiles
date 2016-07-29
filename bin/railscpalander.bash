@@ -7,8 +7,8 @@
 tmux new-session -d -s rails
 tmux rename-window 'VIM' \; send-keys $'cd ~/CPASoftwares/cpalander && rvmprompt\nvim\n'
 #tmux new-window -t rails:1 -n 'VIM'
-tmux new-window -t rails:1 -n 'irb' \; send-keys $'cd ~/CPASoftwares/cpalander && rvmprompt\nirb\n'
-tmux new-window -t rails:2 -n 'server' \; send-keys $'cd ~/CPASoftwares/cpalander && rvmprompt\n'
+tmux new-window -t rails:1 -n 'server' \; send-keys $'cd ~/CPASoftwares/cpalander && rvmprompt\n'
+tmux new-window -t rails:2 -n 'irb' \; send-keys $'cd ~/CPASoftwares/cpalander && rvmprompt\nirb\n'
 tmux new-window -t rails:3 -n 'psql' \; send-keys $'cd ~/CPASoftwares/cpalander && rvmprompt\n'
 tmux new-window -t rails:4 -n 'shell-1' \; send-keys $'cd ~/CPASoftwares/cpalander && rvmprompt\n'
 tmux new-window -t rails:5 -n 'shell-2' \; send-keys $'cd ~/CPASoftwares/cpalander && rvmprompt\n'

@@ -14,6 +14,7 @@
     #~/.config/conky: conky
     ~/.vimrc: vimrc
     ~/.gvimrc: gvimrc
+    ~/.irbrc: irbrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

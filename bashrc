@@ -10,7 +10,7 @@ PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 #PATH="${PATH}:$(ruby -rubygems -e 'puts Gem.user_dir')/bin"
 
 NPM_PACKAGES="${HOME}/bin/node_modules"
-NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$PATH"
 
 PATH="${PATH}:$NPM_PACKAGES/bin/"
 MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
@@ -26,8 +26,8 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-export NVM_DIR="~/bin/nvm/"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR=~/bin/nvm
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
 ### Added by the Heroku Toolbelt
@@ -70,10 +70,11 @@ alias lsd='ls --group-directories-first'
 alias g='gvim --remote-silent'
 
 
+MANWIDTH=80
 unset HISTFILESIZE
 HISTSIZE=2000
 PROMPT_COMMAND="${PROMPT_COMMAND:-:}; history -a"
-export HISTSIZE PROMPT_COMMAND
+export HISTSIZE PROMPT_COMMAND MANWIDTH
 
 shopt -s histappend
 

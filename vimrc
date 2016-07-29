@@ -20,8 +20,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-rails'
 Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'noah/vim256-color'
-"Plugin 'ryanoasis/vim-devicons'
+"Plugin 'noah/vim256-color'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 Plugin 'file:///~/.vim/bundle/vim-uploader'
 
 call vundle#end()
@@ -216,9 +218,9 @@ endfunction
 " UltiSnips
 "
 let g:UltiSnipsEditSplit="horizontal"
-let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+let g:UltiSnipsExpandTrigger="<C-Tab>"
+let g:UltiSnipsJumpForwardTrigger="<C-S-Space>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Space>"
 
 let g:vcoolor_disable_mappings = 1
 let g:vcoolor_map = '<F8>'
