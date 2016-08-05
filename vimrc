@@ -164,7 +164,7 @@ colorscheme default
 
 " mate-terminal default config.
 if $TERM == 'xterm'
-    highlight MatchParen ctermbg=yellow ctermbg=0
+    highlight MatchParen cterm=reverse ctermbg=NONE ctermbg=NONE
 elseif $TERM == 'rxvt-unicode-256color'
     highlight MatchParen ctermbg=2 ctermfg=white
 endif
