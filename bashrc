@@ -10,7 +10,7 @@ PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 #PATH="${PATH}:$(ruby -rubygems -e 'puts Gem.user_dir')/bin"
 
 NPM_PACKAGES="${HOME}/bin/node_modules"
-NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$PATH"
 
 PATH="${PATH}:$NPM_PACKAGES/bin/"
 MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
@@ -26,8 +26,8 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-export NVM_DIR="~/bin/nvm/"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR=~/bin/nvm
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
 ### Added by the Heroku Toolbelt
@@ -42,7 +42,7 @@ stty -ixon
 
 
 shopt -s checkwinsize # For hr='=='stuff to work.
-hr='============================================================================================================================================================='
+hr='----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------'
 if [ -f /usr/share/git/completion/git-prompt.sh ]; then
     source '/usr/share/git/git-prompt.sh'
 fi
@@ -51,12 +51,14 @@ fi
 if test $TERM == linux ; then
     check=' '
 else
-    check=$' \u2713 '
+    check=$'\u2713'
 fi
 
 # I like the ‘$ ’ prompt on a line of its own so I have plenty of space on the right to
 # punch in the commands.
-PS1='\n\[\e[0;34m\]\w/ $(date +'%H:%M:%S')${check}\e[0;31m$(__git_ps1 "[ %s ]")\e[0m\[\e[0;35m\]\n\$ \[\e[1;0m\]'
+#PS1='\n\[\e[0;34m\]\w/ $(date +'%H:%M:%S')${check}\e[0;31m$(__git_ps1 "[ %s ]")\e[0m\[\e[0;35m\]\n\$ \[\e[1;0m\]'
+
+PS1='\n\[\e[0;34m\]$(printf "%s\n" "${hr:0:${COLUMNS:-$(tput cols)}}")\n\[\e[0;34m\]\w/ $(date +'%H:%M:%S')\n\[\e[0;35m\][bash-$(echo -n $BASH_VERSION)] [$(~/.rvm/bin/rvm-prompt)] $(echo -n [node-`node -v`)] \e[0m\[\e[0;35m\]\e[0;31m$(__git_ps1 "[%s ${check}]")\[\e[1;0m\]\n\$ '
 
 
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
@@ -70,10 +72,11 @@ alias lsd='ls --group-directories-first'
 alias g='gvim --remote-silent'
 
 
+MANWIDTH=80
 unset HISTFILESIZE
 HISTSIZE=2000
 PROMPT_COMMAND="${PROMPT_COMMAND:-:}; history -a"
-export HISTSIZE PROMPT_COMMAND
+export HISTSIZE PROMPT_COMMAND MANWIDTH
 
 shopt -s histappend
 
@@ -89,7 +92,7 @@ function title {
     echo -en "\033]2;$1\007"
     #PROMPT_COMMAND='echo -ne "\033]0;$1\007"'
 }
-
+export -f title
 
 # Run with: Build hello.c
 Build() {

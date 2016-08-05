@@ -13,6 +13,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
@@ -20,8 +21,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-rails'
 Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'noah/vim256-color'
-"Plugin 'ryanoasis/vim-devicons'
+"Plugin 'noah/vim256-color'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 Plugin 'file:///~/.vim/bundle/vim-uploader'
 
 call vundle#end()
@@ -113,6 +116,13 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Disable for typescript since it already provides syntax checking
+" stuff and other things. All other filetypes still run syntax checking
+" by default.
+let g:syntastic_mode_map = {
+    \ 'mode': 'active',
+    \ 'passive_filetypes': ['typescript'] }
 
 " CtrlP "
 " change default mapping "
@@ -216,9 +226,9 @@ endfunction
 " UltiSnips
 "
 let g:UltiSnipsEditSplit="horizontal"
-let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+let g:UltiSnipsExpandTrigger="<C-Tab>"
+let g:UltiSnipsJumpForwardTrigger="<C-S-Space>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Space>"
 
 let g:vcoolor_disable_mappings = 1
 let g:vcoolor_map = '<F8>'
@@ -230,7 +240,7 @@ let g:VimUploaderHostsFile = '~/.priv/remote-hosts.vim'
 
 " Load some of my own stuff.
 if hostname() != 'fernandovbsdev'
-    source $HOME/.vim/mystuff/headings.vim
+    "source $HOME/.vim/mystuff/headings.vim
 endif
 
 
