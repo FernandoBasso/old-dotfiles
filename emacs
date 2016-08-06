@@ -58,6 +58,27 @@
  ;; If there is more than one, they won't work right.
  )
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; org mode
+
+(setq org-emphasis-regexp-components
+      '("     ('\"{“”"
+        "-   .,!?;''“”\")}/\\“”"
+        "    \r\n"
+        "."
+        1))
+
+(add-hook 'org-mode-hook
+          (lambda ()
+            (org-bullets-mode t)))
+
+(setq org-ellipsis "⤵")
+
+(setq org-src-fontify-natively t)
+
+(setq org-src-tab-acts-natively t)
+
+(setq org-src-window-setup 'current-window)
 
 
 (add-hook 'after-save-hook
@@ -65,11 +86,16 @@
             (let* ((filename (buffer-file-name))
                    (ext (file-name-extension filename)))
               (if (equal ext "adoc")
-                  (shell-command (format "asciidoctor %s" 
-					 (shell-quote-argument filename))
-				 nil
-				 "*asciidoc-errors*")))))
+                (shell-command (format "asciidoctor %s" 
+                                       (shell-quote-argument filename))
+                               nil
+                               "*asciidoc-errors*")))))
 
+
+
+;; yasnippet
+(yas-reload-all)
+(add-hook 'prog-mode-hook #'yas-minor-mode)
 
 
 (require 'package)
