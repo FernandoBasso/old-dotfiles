@@ -21,6 +21,8 @@
         "    \r\n"
         "."
         1))
+;; Necessary so the setting above also works when exporting docs.
+(org-element--set-regexps)
 
 (add-hook 'org-mode-hook
           (lambda ()
