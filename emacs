@@ -14,7 +14,7 @@
 
 ;(add-to-list 'load-path "~/.emacs.d/pkgs/org-mode/contrib/lisp/")
 ;(require 'org-drill)
-
+;(org-mode)
 (setq org-emphasis-regexp-components
       '("     ('\"{“”"
         "-   .,!?;''“”\")}/\\“”"
@@ -22,7 +22,8 @@
         "."
         1))
 ;; Necessary so the setting above also works when exporting docs.
-(org-element--set-regexps)
+;(org-element--set-regexps)
+
 
 (add-hook 'org-mode-hook
           (lambda ()
