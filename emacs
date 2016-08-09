@@ -41,9 +41,9 @@
   "Export .org file to utf8 text"
   (org-ascii-export-to-ascii))
 
-(add-hook 'org-mode-hook
-          (lambda ()
-            (add-hook 'after-save-hook 'export-to-utf8-text nil 'make-it-local)))
+;(add-hook 'org-mode-hook
+;          (lambda ()
+;            (add-hook 'after-save-hook 'export-to-utf8-text nil 'make-it-local)))
 
 
 
