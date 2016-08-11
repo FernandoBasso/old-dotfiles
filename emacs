@@ -1,7 +1,7 @@
 (require 'package)
 
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/"))
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
 (package-initialize)
 
@@ -37,9 +37,26 @@
 
 (setq org-src-window-setup 'current-window)
 
+(setq org-agenda-files '("~/Dropbox/orgmode"))
+
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+
+;; Languages that will be supported to evaluate (C-c C-c) in code blocks.
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((emacs-lisp . t)
+   (ruby . t)
+   (haskell . t)))
+
+(setq org-confirm-babel-evaluate nil)
+
 (defun export-to-utf8-text ()
   "Export .org file to utf8 text"
   (org-ascii-export-to-ascii))
+
 
 ;(add-hook 'org-mode-hook
 ;          (lambda ()
@@ -73,9 +90,9 @@
 ;;(set-default-font "Courier 10 Pitch")
 ;;(set-default-font "Monaco 10")
 ;;(set-default-font "Lucida Console")
-;;(set-default-font "ubuntu mono 13")
+(set-default-font "Ubuntu Mono 13")
 ;;(set-default-font "Liberation Mono-11")
-(set-default-font "Source Code Pro")
+;;(set-default-font "Source Code Pro")
 
 (global-linum-mode 1)
 
