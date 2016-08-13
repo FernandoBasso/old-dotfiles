@@ -94,6 +94,15 @@
 ;;(set-default-font "Liberation Mono-11")
 ;;(set-default-font "Source Code Pro")
 
+;; Restore cursor position
+(if (version< emacs-version "25.0")
+    (progn
+      (require 'saveplace)
+      (setq-default save-place t))
+  (save-place-mode 1))
+
+(setq inhibit-startup-screen t)
+
 (global-linum-mode 1)
 
 (setq backup-directory-alist `(("." . "~/Emacs_Stuff")))
