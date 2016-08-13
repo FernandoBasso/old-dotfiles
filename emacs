@@ -17,7 +17,7 @@
 ;(org-mode)
 (setq org-emphasis-regexp-components
       '("     ('\"{“”"
-        "-   .,!?;''“”\")}/\\“”"
+        "-   .,!?;''“”\")}/\\“”:"
         "    \r\n"
         "."
         1))
