@@ -53,10 +53,19 @@
 
 (setq org-confirm-babel-evaluate nil)
 
-(defun export-to-utf8-text ()
-  "Export .org file to utf8 text"
-  (org-ascii-export-to-ascii))
+(defun my/toggle-org-hide-emphasis-markers ()
+  "Toggle displaying of org-mode markers like ~, * and /, among others."
+  (interactive)
+  (when (eq major-mode 'org-mode)
+    (setq org-hide-emphasis-markers (not org-hide-emphasis-markers))
+    (message "%s org-mode-emphasis-markers" (if org-hide-emphasis-markers "Showing" "Hiding"))
+    (org-mode)))
 
+(global-set-key (kbd "C-c t") 'my/toggle-org-hide-emphasis-markers)
+
+; (defun export-to-utf8-text ()
+;   "Export .org file to utf8 text"
+;   (org-ascii-export-to-ascii))
 
 ;(add-hook 'org-mode-hook
 ;          (lambda ()
