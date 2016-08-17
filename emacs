@@ -94,14 +94,7 @@
 ;; Other Settings
 ;;
 (blink-cursor-mode -1)
-;;(set-default-font "monofur-14")
-;;(set-default-font "Anonymous Pro Minus 12")
-;;(set-default-font "Courier 10 Pitch")
-;;(set-default-font "Monaco 10")
-;;(set-default-font "Lucida Console")
 (set-default-font "Ubuntu Mono 13")
-;;(set-default-font "Liberation Mono-11")
-;;(set-default-font "Source Code Pro")
 
 ;; Restore cursor position
 (if (version< emacs-version "25.0")
@@ -118,6 +111,11 @@
 (setq frame-title-format "%b")
 (tool-bar-mode -1)
 (menu-bar-mode -1)
+
+(global-set-key "\C-c\d" 'previous-buffer)
+
+(setq split-height-threshold nil)
+(setq split-width-threshold 0)
 
 
 (custom-set-variables
