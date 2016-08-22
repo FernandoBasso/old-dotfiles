@@ -25,9 +25,9 @@
 ;(org-element--set-regexps)
 
 
-(add-hook 'org-mode-hook
-          (lambda ()
-            (org-bullets-mode t)))
+; (add-hook 'org-mode-hook
+;           (lambda ()
+;             (org-bullets-mode t)))
 
 (setq org-ellipsis "⤵")
 
@@ -114,8 +114,8 @@
 
 (global-set-key "\C-c\d" 'previous-buffer)
 
-(setq split-height-threshold nil)
-(setq split-width-threshold 0)
+(setq split-height-threshold 80)
+(setq split-width-threshold 160)
 
 
 (custom-set-variables
