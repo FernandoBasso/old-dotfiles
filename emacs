@@ -12,22 +12,13 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; org mode
 
-;(add-to-list 'load-path "~/.emacs.d/pkgs/org-mode/contrib/lisp/")
-;(require 'org-drill)
-;(org-mode)
+
 (setq org-emphasis-regexp-components
       '("     ('\"{“”"
         "-   .,!?;''“”\")}/\\“”:"
         "    \r\n"
         "."
         1))
-;; Necessary so the setting above also works when exporting docs.
-;(org-element--set-regexps)
-
-
-; (add-hook 'org-mode-hook
-;           (lambda ()
-;             (org-bullets-mode t)))
 
 (setq org-ellipsis "⤵")
 
@@ -38,6 +29,11 @@
 (setq org-src-window-setup 'current-window)
 
 (setq org-agenda-files '("~/Dropbox/orgmode"))
+
+;; bigger latex fragment
+(require 'org)
+(plist-put org-format-latex-options :scale 1.5)
+
 
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (global-set-key "\C-cl" 'org-store-link)
@@ -95,6 +91,11 @@
 ;;
 (blink-cursor-mode -1)
 (set-default-font "Ubuntu Mono 13")
+
+(setq show-trailing-whitespace t)
+(setq delete-trailing-lines nil)
+
+
 
 ;; Restore cursor position
 (if (version< emacs-version "25.0")
@@ -154,12 +155,15 @@
             (let* ((filename (buffer-file-name))
                    (ext (file-name-extension filename)))
               (if (equal ext "adoc")
-                (shell-command (format "asciidoctor %s" 
+                (shell-command (format "asciidoctor %s"
                                        (shell-quote-argument filename))
                                nil
                                "*asciidoc-errors*")))))
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; haskell-mode
+(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 
 
 
