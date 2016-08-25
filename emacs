@@ -49,6 +49,8 @@
 
 (setq org-confirm-babel-evaluate nil)
 
+(setq org-hide-emphasis-markers t)
+
 (defun my/toggle-org-hide-emphasis-markers ()
   "Toggle displaying of org-mode markers like ~, * and /, among others."
   (interactive)
@@ -125,6 +127,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(browse-url-browser-function (quote browse-url-generic))
+ '(custom-safe-themes
+   (quote
+    ("cdbd0a803de328a4986659d799659939d13ec01da1f482d838b68038c1bb35e8" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" default)))
  '(org-modules
    (quote
     (org-bbdb org-bibtex org-docview org-gnus org-info org-irc org-mhe org-rmail org-w3m org-drill)))
