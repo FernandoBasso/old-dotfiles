@@ -20,7 +20,8 @@
         "."
         1))
 
-(setq org-ellipsis "⤵")
+;; Problems with (global-linum-mode 1). Let's not use fancy utf8 char for now.
+;(setq org-ellipsis "⤵")
 
 (setq org-src-fontify-natively t)
 
@@ -108,7 +109,8 @@
 
 (setq inhibit-startup-screen t)
 
-(global-linum-mode 1)
+;; It is causing problems with org-ellipsis set to ⤵ .
+;(global-linum-mode 2)
 
 (setq backup-directory-alist `(("." . "~/Emacs_Stuff")))
 (setq frame-title-format "%b")
