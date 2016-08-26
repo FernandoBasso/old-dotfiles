@@ -49,6 +49,8 @@
 
 (setq org-confirm-babel-evaluate nil)
 
+(setq org-hide-emphasis-markers t)
+
 (defun my/toggle-org-hide-emphasis-markers ()
   "Toggle displaying of org-mode markers like ~, * and /, among others."
   (interactive)
