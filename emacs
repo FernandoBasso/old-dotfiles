@@ -123,21 +123,14 @@
 (setq split-width-threshold 160)
 
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(browse-url-browser-function (quote browse-url-generic))
- '(custom-safe-themes
-   (quote
-    ("cfa7053f155661faa33ef648f55d524eb97854f8f0ff9ff91a08b3ba47a9a25f" "e56ee322c8907feab796a1fb808ceadaab5caba5494a50ee83a13091d5b1a10c" "cdbd0a803de328a4986659d799659939d13ec01da1f482d838b68038c1bb35e8" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
- '(org-modules
-   (quote
-    (org-bbdb org-bibtex org-docview org-gnus org-info org-irc org-mhe org-rmail org-w3m org-drill)))
- '(tab-stop-list
-   (quote
-    (4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120))))
+(setq-default indent-tabs-mode nil)
+(setq tab-width 2)
+(setq-default tab-always-indent 'complete)
+
+
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
+(setq fill-column 78)
+
 
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "midori")
@@ -153,7 +146,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(org-code ((t (:inherit shadow :foreground "dark green")))))
 
 
 

@@ -93,7 +93,9 @@ autocmd BufReadPost *
 
 " ▶ is possible by typing ^k followed by PR. :help digraps.
 "set listchars=tab:▶\ ,trail:-
-set listchars=tab:¬\ ,trail:-
+"set listchars=tab:¬\ ,trail:-
+"set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set listchars=tab:▸\ ,trail:·
 set list
 
 " Buffers "
