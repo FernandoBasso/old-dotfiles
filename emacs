@@ -31,6 +31,8 @@
 
 (setq org-agenda-files '("~/Dropbox/orgmode"))
 
+(setq org-edit-src-content-indentation 0)
+
 ;; bigger latex fragment
 (require 'org)
 (plist-put org-format-latex-options :scale 1.5)
