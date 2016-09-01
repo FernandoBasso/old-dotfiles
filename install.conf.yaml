@@ -6,12 +6,13 @@
 
 - link:
     #~/.dotfiles: ''
+    ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.Xresources: Xresources
     ~/.Xresources.d: Xresources.d
     ~/.tmux.conf: tmux.conf
     ~/.config/openbox: openbox
-    #~/.config/conky: conky
+    ~/.config/conky: conky
     ~/.vimrc: vimrc
     ~/.vim: vim
     ~/.vim/colors/mate-terminal-dark-vim.vim: vim/colors/mate-terminal-dark-vim.vim
