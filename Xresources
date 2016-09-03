@@ -30,7 +30,7 @@ URxvt.scrollBar: false
 !URxvt.shading: 25
 
 ! Not necessary with rxvt-unicode-patched from aur.
-!URxvt.letterSpace: -1
+URxvt.letterSpace: -1
 URxvt.saveLines: 8192
 
 URxvt.perl-ext-common: default,resize-font,unichr,fullscreen
