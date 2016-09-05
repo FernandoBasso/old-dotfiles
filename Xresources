@@ -9,12 +9,10 @@ Xft.dpi: 96
 Xft.rgba: rgb
 
 ! https://bbs.archlinux.org/viewtopic.php?id=184089
-!URxvt.font: xft:Ubuntu Mono:size=20:antialias=true,Common:size=20:antialias=true
-
-URxvt.font: xft:Source Code Pro:pixelsize=18style=medium:antialias=true,xft:Ubuntu Mono:pixelsize=18:antialias=true:hinting=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.boldFont:       xft:Ubuntu Mono:pixelsize=18:antialias=true:bold:hinting=true
-URxvt.italicFont:     xft:Ubuntu Mono:pixelsize=18:antialias=true:italic:autohint=true:hinting=true
-URxvt.bolditalicFont: xft:Ubuntu Mono:pixelsize=18:antialias=true:bold:italic:autohint=true:hinting=true
+URxvt.font: xft:Source Code Pro:pixelsize=18style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.boldFont: xft:Source Code Pro:pixelsize=18style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.italicFont: xft:Source Code Pro:pixelsize=18style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.bolditalicFont: xft:Source Code Pro:pixelsize=18style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 
 
 ! Colored man pages.
