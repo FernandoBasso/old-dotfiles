@@ -19,6 +19,7 @@
     ~/.gvimrc: gvimrc
     ~/.irbrc: irbrc
     ~/.emacs: emacs
+    ~/.config/aurgetrc: aurgetrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
