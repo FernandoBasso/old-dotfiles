@@ -15,11 +15,13 @@
     ~/.config/conky: conky
     ~/.vimrc: vimrc
     ~/.vim: vim
+    ~/.vim/after: vim/after
     ~/.vim/colors/mate-terminal-dark-vim.vim: vim/colors/mate-terminal-dark-vim.vim
     ~/.gvimrc: gvimrc
     ~/.irbrc: irbrc
     ~/.emacs: emacs
     ~/.config/aurgetrc: aurgetrc
+    ~/.local/share/applications/urxvt.desktop: dot-desktop/urxvt.desktop
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

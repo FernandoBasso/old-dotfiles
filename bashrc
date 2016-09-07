@@ -3,17 +3,18 @@
 
 # PATH ini ----------------------------------------------------------------------------------------
 
+# If we add this later, rvm complaings some ruby/version thing must appear first.
+export NVM_DIR=~/bin/nvm
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # The rvm path thing has to be the first, for some reason.
 PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 [ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
 
-#PATH="${PATH}:$(ruby -rubygems -e 'puts Gem.user_dir')/bin"
-
 NPM_PACKAGES="${HOME}/bin/node_modules"
-NODE_PATH="$NPM_PACKAGES/lib/node_modules:$PATH"
-
+NODE_PATH="$NPM_PACKAGES/lib/node_modules"
 PATH="${PATH}:$NPM_PACKAGES/bin/"
-MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+#MANPATH="$(manpath):$NPM_PACKAGES/share/man"
 
 # Some of my own stuff.
 PATH="${PATH}:$HOME/bin:${HOME}/.dotfiles/bin"
@@ -23,12 +24,8 @@ export PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+    PATH="$PATH:$HOME/bin"
 fi
-
-export NVM_DIR=~/bin/nvm
-[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
-
 
 ### Added by the Heroku Toolbelt
 export PATH="${PATH}:/usr/local/heroku/bin"
@@ -58,6 +55,10 @@ fi
 # punch in the commands.
 #PS1='\n\[\e[0;34m\]\w/ $(date +'%H:%M:%S')${check}\e[0;31m$(__git_ps1 "[ %s ]")\e[0m\[\e[0;35m\]\n\$ \[\e[1;0m\]'
 
+# PROMPT_COMMAND is overriding URxvt title resource/param so let's unset it
+# since it doesn't look like it would cause problems.
+unset PROMPT_COMMAND
+
 PS1='\n\[\e[0;34m\]$(printf "%s\n" "${hr:0:${COLUMNS:-$(tput cols)}}")\n\[\e[0;34m\]\w/ $(date +'%H:%M:%S')\n\[\e[0;35m\][bash-$(echo -n $BASH_VERSION)] [$(~/.rvm/bin/rvm-prompt)] $(echo -n [node-`node -v`)] \e[0m\[\e[0;35m\]\e[0;31m$(__git_ps1 "[%s ${check}]")\[\e[1;0m\]\n\$ '
 
 
@@ -81,7 +82,7 @@ export HISTSIZE PROMPT_COMMAND MANWIDTH
 shopt -s histappend
 
 export PAGER='/usr/bin/less'
-export BROWSER='firefox'
+#export BROWSER='firefox'
 export EDITOR='/usr/bin/vim'
 
 # Shows only files that are not directories.
@@ -89,10 +90,10 @@ lsf() { /bin/ls -F1 "$@" | egrep -v '/$'| sort -d; }
 
 function title {
     unset PROMPT_COMMAND
-    echo -en "\033]2;$1\007"
+    echo -en "\037]2;$1\007"
     #PROMPT_COMMAND='echo -ne "\033]0;$1\007"'
 }
-export -f title
+#export -f title
 
 # Run with: Build hello.c
 Build() {

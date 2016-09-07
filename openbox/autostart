@@ -21,4 +21,5 @@ xrdb ~/.Xresources
 (sleep 2s && tint2) &
 (sleep 2s && nm-applet) &
 (sleep 2s && volumeicon) &
+(sleep 2s && parcellite) &
 
