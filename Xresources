@@ -9,10 +9,10 @@ Xft.dpi: 96
 Xft.rgba: rgb
 
 ! https://bbs.archlinux.org/viewtopic.php?id=184089
-URxvt.font: xft:Source Code Pro:pixelsize=18style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.boldFont: xft:Source Code Pro:pixelsize=18style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.italicFont: xft:Source Code Pro:pixelsize=18style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.bolditalicFont: xft:Source Code Pro:pixelsize=18style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.font: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.boldFont: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.italicFont: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.bolditalicFont: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 
 
 ! Colored man pages.
@@ -30,6 +30,7 @@ URxvt.scrollBar: false
 ! Not necessary with rxvt-unicode-patched from aur.
 URxvt.letterSpace: -1
 URxvt.saveLines: 8192
+URxvt.geometry: 132x42
 
 URxvt.perl-ext-common:      default,clipboard,resize-font,url-select,keyboard-select
 URxvt.url-select.launcher:  chromium

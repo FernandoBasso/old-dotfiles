@@ -31,6 +31,7 @@ call vundle#end()
 
 filetype plugin indent on
 syntax on
+packadd! matchit
 set omnifunc=syntaxcomplete#Complete
 set number
 set ruler
