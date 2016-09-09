@@ -10,8 +10,13 @@ if [ ! -d "$temp_study_dir" ] ; then
     cd "$temp_study_dir"
 fi
 
+# \033 is \e, which is ESC.
+# \007 is \a, which is BEL.
+#echo -en '\033]2;Always Be Awesome!\007'
+printf '\e]2;%s\a' 'Always Be Awesome!'
+
 tmux new-session -d -s 'studies-anki' -c "$temp_study_dir"
-tmux rename-window 'vim'
+tmux rename-window 'vim' \; send-keys $'vim\n'
 tmux new-window -t studies-anki:1 -n 'emacs' \; send-keys $'emacs -nw\n'
 tmux new-window -t studies-anki:2 -n 'shell-1'
 tmux new-window -t studies-anki:3 -n 'shell-2'
@@ -19,8 +24,4 @@ tmux new-window -t studies-anki:4 -n 'shell-3'
 
 tmux select-window -t studies-anki:0
 tmux -2 attach-session -t studies-anki
-
-# For some reason, I couldn't do this to start vim at early lines
-# of the script. Oh well...
-tmux send-keys $'vim\n'
 
