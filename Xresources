@@ -9,10 +9,10 @@ Xft.dpi: 96
 Xft.rgba: rgb
 
 ! https://bbs.archlinux.org/viewtopic.php?id=184089
-URxvt.font: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.boldFont: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.italicFont: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.bolditalicFont: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.font: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.boldFont: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.italicFont: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.bolditalicFont: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 
 
 ! Colored man pages.
