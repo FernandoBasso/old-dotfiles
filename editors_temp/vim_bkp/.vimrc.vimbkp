@@ -77,7 +77,7 @@ set backupext=.vimbkp
 set directory=~/.dotfiles/editors_temp/vim_tmp//
 
 
-" Restore cursor position (:help restore-cursor).
+" Restore cursor position (:help restore-cursor)
 autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
