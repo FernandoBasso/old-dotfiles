@@ -22,9 +22,11 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-rails'
 Plugin 'cakebaker/scss-syntax.vim'
 "Plugin 'noah/vim256-color'
-Plugin 'ryanoasis/vim-devicons'
+"Plugin 'ryanoasis/vim-devicons'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'file:///~/.vim/bundle/dbext'
 Plugin 'file:///~/.vim/bundle/vim-uploader'
 
 call vundle#end()
@@ -72,12 +74,12 @@ set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 
 set backup
-set backupdir=~/Vim_Stuff/backup
+set backupdir=~/.dotfiles/editors_temp/vim_bkp/
 set backupext=.vimbkp
-set directory=~/Vim_Stuff/tmp//
+set directory=~/.dotfiles/editors_temp/vim_tmp//
 
 
-" Restore cursor position (:help restore-cursor)
+" Restore cursor position (:help restore-cursor).
 autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
@@ -239,7 +241,7 @@ let g:vcoolor_map = '<F8>'
 "
 " Vim-Uploader
 "
-let g:VimUploaderHostsFile = '~/.priv/remote-hosts.vim'
+let g:VimUploaderHostsFile = '~/Documents/vimftpconf/remote-hosts.vim'
 
 " Load some of my own stuff.
 if hostname() != 'fernandovbsdev'

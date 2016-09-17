@@ -48,7 +48,7 @@ fi
 if test $TERM == linux ; then
     check=' '
 else
-    check=$'\u2713'
+    check=$'\u2714'
 fi
 
 # I like the ‘$ ’ prompt on a line of its own so I have plenty of space on the right to
