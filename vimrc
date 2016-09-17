@@ -22,9 +22,11 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-rails'
 Plugin 'cakebaker/scss-syntax.vim'
 "Plugin 'noah/vim256-color'
-Plugin 'ryanoasis/vim-devicons'
+"Plugin 'ryanoasis/vim-devicons'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'file:///~/.vim/bundle/dbext'
 Plugin 'file:///~/.vim/bundle/vim-uploader'
 
 call vundle#end()
@@ -239,7 +241,7 @@ let g:vcoolor_map = '<F8>'
 "
 " Vim-Uploader
 "
-let g:VimUploaderHostsFile = '~/.priv/remote-hosts.vim'
+let g:VimUploaderHostsFile = '~/Documents/vimftpconf/remote-hosts.vim'
 
 " Load some of my own stuff.
 if hostname() != 'fernandovbsdev'
