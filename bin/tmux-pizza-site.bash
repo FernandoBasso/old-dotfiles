@@ -37,8 +37,9 @@ done
 tmux new-session -d -s "$ses" -c "$dir" \; rename-window 'vim' \; \
     send-keys 'vim app.php' C-m
 
+# php -S takes a host name, without the protocol:// part.
 tmux new-window -t "${ses}:2" -n 'php -S' -c "$dir" \; \
-    send-keys 'php -S http://dev.local.me:8080' C-m
+    send-keys 'php -S dev.local.me:8080' C-m
 
 tmux new-window -t "${ses}:3" -n 'sass' -c "$dir" \; \
     send-keys 'sass --watch scss:css' C-m
