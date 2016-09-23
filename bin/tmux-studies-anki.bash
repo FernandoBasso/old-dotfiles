@@ -14,15 +14,15 @@ fi
 # \033 is \e, which is ESC.
 # \007 is \a, which is BEL.
 #echo -en '\033]2;Anki Studies!\007'
-printf '\e]2;%s\a' 'Anki Studies!'
+#printf '\e]2;%s\a' 'Anki Studies!'
 
 tmux new-session -d -s "$ses" -c "$dir"
 tmux rename-window 'vim' \; send-keys $'vim \n'
-tmux new-window -t "${ses}:1" -n 'emacs' -c "$dir" \; send-keys $'emacs -nw\n'
-tmux new-window -t "${ses}:2" -n 'shell-1' -c "$dir"
-tmux new-window -t "${ses}:3" -n 'shell-2' -c "$dir"
-tmux new-window -t "${ses}:4" -n 'shell-3' -c "$dir"
+tmux new-window -t "${ses}:2" -n 'emacs' -c "$dir" \; send-keys $'emacs -nw\n'
+tmux new-window -t "${ses}:3" -n 'shell-1' -c "$dir"
+tmux new-window -t "${ses}:4" -n 'shell-2' -c "$dir"
+tmux new-window -t "${ses}:5" -n 'shell-3' -c "$dir"
 
-tmux select-window -t "${ses}:0"
+tmux select-window -t "${ses}:1"
 tmux -2 attach-session -t "${ses}"
 
