@@ -17,8 +17,8 @@ fi
 #printf '\e]2;%s\a' 'Anki Studies!'
 
 tmux new-session -d -s "$ses" -c "$dir"
-tmux rename-window 'vim' \; send-keys $'vim \n'
-tmux new-window -t "${ses}:2" -n 'emacs' -c "$dir" \; send-keys $'emacs -nw\n'
+tmux rename-window 'vim' \; send-keys $'vim vtemp.txt\n'
+tmux new-window -t "${ses}:2" -n 'emacs' -c "$dir" \; send-keys $'emacs -nw etemp.txt\n'
 tmux new-window -t "${ses}:3" -n 'shell-1' -c "$dir"
 tmux new-window -t "${ses}:4" -n 'shell-2' -c "$dir"
 tmux new-window -t "${ses}:5" -n 'shell-3' -c "$dir"
