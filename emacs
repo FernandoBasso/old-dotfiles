@@ -93,8 +93,13 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Other Settings
-;;
+
+;; GUI, makes cursor not to blink.
 (blink-cursor-mode -1)
+
+;; For terminal non-blinking cursor. See C-h m Emacs RET m Cursor Display RET.
+(setq visible-cursor nil)
+
 ; (set-default-font "Ubuntu Mono 13")
 (set-default-font "Source Code Pro 12")
 
@@ -119,6 +124,15 @@
 (setq frame-title-format "%b")
 (tool-bar-mode -1)
 (menu-bar-mode -1)
+
+;; If not on GUI, use molokai
+(if (not (display-graphic-p))
+    (progn
+      (load-theme 'molokai t)
+      ;; And set this sort of yellow color for org-code.
+      (set-face-foreground 'org-code "#e4e693")
+      ;; And this for the main title.
+      (set-face-foreground 'org-document-title "yellow")))
 
 (global-set-key "\C-c\d" 'previous-buffer)
 
