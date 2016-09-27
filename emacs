@@ -120,6 +120,16 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 
+;; If we are on GUI, use molokai. If in emacs -nw (cli), also use molokai
+;; (most as an example in case I some day need two different themes.
+(if (display-graphic-p)
+    (load-theme 'molokai t)
+   (load-theme 'molokai t))
+
+;; A sort of yellow color for org-code.
+(set-face-foreground 'org-code "#e4e693")
+(set-face-foreground 'org-document-title "yellow")
+
 (global-set-key "\C-c\d" 'previous-buffer)
 
 (setq split-height-threshold 80)
