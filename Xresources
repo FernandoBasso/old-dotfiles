@@ -49,7 +49,7 @@ URxvt.resize-font.bigger: C-plus
 URxvt.resize-font.reset: C-equal
 URxvt.resize-font.show: C-question
 ! -title param overrides this.
-URxvt.title: Be Awesome!
+URxvt.title: Always Be Awesome!
 
 
 XTerm*faceName: xft:Source Code Pro:size=13
