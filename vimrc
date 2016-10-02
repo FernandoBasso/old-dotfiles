@@ -195,7 +195,7 @@ if !exists("g:ycm_semantic_triggers")
 endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
 
-if hostname() != 'theforce'
+if hostname() == 'theforce'
   let g:ycm_server_python_interpreter = '/usr/bin/python2'
 end
 
