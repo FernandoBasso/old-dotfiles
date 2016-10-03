@@ -195,6 +195,9 @@ if !exists("g:ycm_semantic_triggers")
 endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
 
+if hostname() == 'theforce'
+  let g:ycm_server_python_interpreter = '/usr/bin/python2'
+end
 
 let html_no_rendering = 1
 
@@ -244,7 +247,7 @@ let g:vcoolor_map = '<F8>'
 let g:VimUploaderHostsFile = '~/Documents/WorkDATA/vimftpconf/remote-hosts.vim'
 
 " Load some of my own stuff.
-if hostname() != 'fernandovbsdev'
+if hostname() != 'theforce'
     "source $HOME/.vim/mystuff/headings.vim
 endif
 
