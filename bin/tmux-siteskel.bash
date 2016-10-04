@@ -11,7 +11,7 @@ mariadb_unit=mysql.service
 if [ $HOSTNAME = theforce ] ; then
     apache_unit=httpd.service
 fi
-services=($apache_unit $postgresql_unit)
+services=($apache_unit $mariadb_unit)
 
 
 if [ ! -d "$dir" ] ; then
@@ -53,6 +53,4 @@ tmux new-window -t "${ses}:5" -n 'shell' -c "$dir" \; \
 
 tmux select-window -t "${ses}:1"
 tmux -2 attach-session -t "${ses}"
-
-
 
