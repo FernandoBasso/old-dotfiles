@@ -10,7 +10,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
@@ -23,8 +25,6 @@ Plugin 'tpope/vim-rails'
 Plugin 'cakebaker/scss-syntax.vim'
 "Plugin 'noah/vim256-color'
 "Plugin 'ryanoasis/vim-devicons'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'file:///~/.vim/bundle/dbext'
 Plugin 'file:///~/.vim/bundle/vim-uploader'
@@ -229,14 +229,28 @@ function! NumberQuestions()
 endfunction
 
 
+"
+" YCM
+"
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+"let g:SuperTabDefaultCompletionType = '<C-n>'
 
 "
 " UltiSnips
 "
+" So these two lines are required to make my custom snippets work, huh?!
+let g:UltiSnipsSnippetsDir = "~/.vim/mysnips"
+let g:UltiSnipsSnippetDirectories = ["UltiSnips", "mysnips"]
+
+" Problem: on terminals, c-tab sends tab, and tab is bound to ycm.
+" s-tab doesn't work either in the terminal (urxvt at least).
 let g:UltiSnipsEditSplit="horizontal"
-let g:UltiSnipsExpandTrigger="<C-Tab>"
+let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<C-S-Space>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Space>"
+" https://github.com/Valloric/YouCompleteMe/issues/420#issuecomment-55940039
 
 let g:vcoolor_disable_mappings = 1
 let g:vcoolor_map = '<F8>'

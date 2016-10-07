@@ -15,8 +15,6 @@
     ~/.config/conky: conky
     ~/.vimrc: vimrc
     ~/.vim: vim
-    ~/.vim/after: vim/after
-    ~/.vim/colors/mate-terminal-dark-vim.vim: vim/colors/mate-terminal-dark-vim.vim
     ~/.gvimrc: gvimrc
     ~/.irbrc: irbrc
     ~/.emacs: emacs
