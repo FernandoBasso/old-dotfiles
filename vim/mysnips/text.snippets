@@ -1,5 +1,21 @@
-snippet foo "Description" b
-foo
-${1}
-bar
+snippet phpvd "php var_dump()" b
+<?php
+$res = ${1};
+
+var_dump($res);
 endsnippet
+
+snippet jslog "js log" b
+var l = console.bind.log(console);
+
+${1}
+endsnippet
+
+snippet rbclassthing "Ruby Class Thing" b
+class Thing
+  @count = 0
+
+  ${1}
+end
+endsnippet
+
