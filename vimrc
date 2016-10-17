@@ -41,6 +41,7 @@ set showcmd
 set hidden
 set scrolloff=3
 set timeoutlen=350
+set mouse=a
 
 " Indentation with SPACES
 set tabstop=4
@@ -175,7 +176,11 @@ nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 nnoremap cd :cd %:h<CR>:pwd<CR>
 
 
-colorscheme default
+if hostname() == 'theforce'
+    colorscheme mytheme1
+else
+    colorscheme default
+endif
 
 " mate-terminal default config.
 if $TERM == 'xterm'
@@ -200,6 +205,8 @@ if hostname() == 'theforce'
 end
 
 let html_no_rendering = 1
+
+autocmd BufReadPost *.twig set filetype=html
 
 "
 " Number sections #[Qn]# to #[Q1]#, #[Q2]#, #[Q3]#, etc.

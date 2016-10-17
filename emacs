@@ -100,6 +100,8 @@
 ;; For terminal non-blinking cursor. See C-h m Emacs RET m Cursor Display RET.
 (setq visible-cursor nil)
 
+(xterm-mouse-mode)
+
 ; (set-default-font "Ubuntu Mono 13")
 (set-default-font "Source Code Pro 12")
 
