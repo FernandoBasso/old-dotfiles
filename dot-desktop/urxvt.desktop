@@ -2,7 +2,7 @@
 Version=1.0
 Name=RXVT Unicode
 Comment=An unicode capable rxvt clone
-Exec=urxvt
+Exec=urxvt -name theme-mytheme1
 #Icon=utilities-terminal
 Icon=/home/fernando/.dotfiles/imgs/icon-terminal1.png
 Terminal=false
