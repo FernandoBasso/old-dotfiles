@@ -23,6 +23,7 @@ highlight Visual ctermbg=233
 highlight PmenuSel ctermbg=yellow ctermfg=white
 highlight Comment ctermfg=4
 highlight Constant ctermfg=1
+highlight Folded ctermbg=234
 
 " :help hl-Search. It is also used for the current, selected line in
 " the quickfix window (which syntastic uses).
