@@ -265,7 +265,7 @@ let g:vcoolor_map = '<F8>'
 "
 " Vim-Uploader
 "
-let g:VimUploaderHostsFile = '~/Documents/WorkDATA/vimftpconf/remote-hosts.vim'
+let g:VimUploaderHostsFile = '~/WorkSRC/WorkDATA/vimftpconf/remote-hosts.vim'
 
 " Load some of my own stuff.
 if hostname() != 'theforce'
