@@ -4,7 +4,7 @@
 # PATH ini ----------------------------------------------------------------------------------------
 
 # If we add this later, rvm complaings some ruby/version thing must appear first.
-export NVM_DIR=~/bin/nvm
+export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # The rvm path thing has to be the first, for some reason.
