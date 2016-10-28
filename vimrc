@@ -176,7 +176,7 @@ nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 nnoremap cd :cd %:h<CR>:pwd<CR>
 
 
-if hostname() == 'theforce'
+if hostname() == 'theforce' || hostname() == 'vbsmidiawork1'
     colorscheme mytheme1
 else
     colorscheme default
