@@ -4,7 +4,7 @@ dir="${HOME}/Dropbox/studies"
 ses='being-awesome'
 
 tmux new-session -d -s "$ses" -c "$dir" \; rename-window 'vim' \; \
-    send-keys 'vim main.c' C-m
+    send-keys 'vim' C-m
 
 # php -S takes a host name, without the protocol:// part.
 tmux new-window -t "${ses}:2" -n 'emacs' -c "$dir" \; \
