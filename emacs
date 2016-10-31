@@ -143,6 +143,15 @@
       ;; And this for the main title.
       (set-face-foreground 'org-document-title "yellow")))
 
+
+;; Transparent background on cli.
+;; http://stackoverflow.com/questions/19054228/emacs-disable-theme-background-color-in-terminal
+(defun transparent-bg-on-terminal ()
+  (unless (display-graphic-p (selected-frame))
+    (set-face-background 'default "unspecified-bg" (selected-frame))))
+
+(add-hook 'window-setup-hook 'transparent-bg-on-terminal)
+
 (global-set-key "\C-c\d" 'previous-buffer)
 
 (setq split-height-threshold 80)
