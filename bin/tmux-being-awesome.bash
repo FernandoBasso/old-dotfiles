@@ -8,7 +8,7 @@ tmux new-session -d -s "$ses" -c "$dir" \; rename-window 'vim' \; \
 
 # php -S takes a host name, without the protocol:// part.
 tmux new-window -t "${ses}:2" -n 'emacs' -c "$dir" \; \
-    send-keys 'emacs -nw' C-m
+    send-keys 'emacs -nw ~/Dropbox/orgmode/goals.org' C-m
 
 tmux new-window -t "${ses}:3" -n 'shell' -c "$dir"
 

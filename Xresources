@@ -10,8 +10,8 @@ Xft.rgba: rgb
 
 ! https://bbs.archlinux.org/viewtopic.php?id=184089
 URxvt.font: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.boldFont: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
-URxvt.italicFont: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.boldFont: xft:Source Code Pro:pixelsize=16style=bold:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.italicFont: xft:Source Code Pro:pixelsize=16style=italic:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt.bolditalicFont: xft:Source Code Pro:pixelsize=16style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 
 
