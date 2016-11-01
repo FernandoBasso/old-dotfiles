@@ -59,7 +59,8 @@
 (setq org-hide-emphasis-markers t)
 
 (setq org-todo-keywords
-      '((sequence "TODO" "DOING" "PAUSED" "WAIT" "VERIFY" "|" "DONE" "DELEGATED" "CANCELED")))
+      '((sequence "TODO(t)" "WORKING(w)" "PAUSED(p)" "WAIT(W)" "VERIFY(v)" "|" "DELEGATED(D)" "CANCELED(c)" "DONE(d)")))
+
 
 (defun my/toggle-org-hide-emphasis-markers ()
   "Toggle displaying of org-mode markers like ~, * and /, among others."
