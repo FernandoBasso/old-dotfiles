@@ -66,7 +66,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     source /etc/bash_completion
 fi
 
-alias ls="ls --color=auto --classify"
+alias ls='ls --color=auto --classify'
+alias ll='ls --color=auto --classify --human-readable --almost-all -o'
 alias P='pacman-color'
 alias g='gvim --remote'
 alias lsd='ls --group-directories-first'
