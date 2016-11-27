@@ -79,7 +79,7 @@
     (message "%s org-mode-emphasis-markers" (if org-hide-emphasis-markers "Showing" "Hiding"))
     (org-mode)))
 
-(global-set-key (kbd "C-c t") 'my/toggle-org-hide-emphasis-markers)
+;(global-set-key (kbd "C-c t") 'my/toggle-org-hide-emphasis-markers)
 
 ; (defun export-to-utf8-text ()
 ;   "Export .org file to utf8 text"

@@ -1,0 +1,10 @@
+{
+    "remote": "Proj X",
+    "host": "ftp.proj-x.net",
+    "port": "21",
+    "username": "projx",
+    "password": "1234",
+    "ldir": "~/projects/projx",
+    "rdir": "projx/public_html"
+}
+
