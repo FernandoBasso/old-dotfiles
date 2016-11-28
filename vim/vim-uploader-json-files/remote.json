@@ -1,0 +1,11 @@
+{
+    "remote": "Site 2",
+    "protocol": "ftp",
+    "host": "ftp.site2.org:2121",
+    "port": "21",
+    "username": "ftpuser2",
+    "password": "asdf",
+    "ldir": "~/projects/site2",
+    "rdir": "/public_html/blog"
+}
+
