@@ -56,13 +56,13 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((emacs-lisp . t)
-   (sh . t)
+   (shell . t)
    (ruby . t)
    (haskell . t)))
 
 (setq org-confirm-babel-evaluate nil)
 
-(setq org-hide-emphasis-markers t)
+;(setq org-hide-emphasis-markers t)
 
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WORKING(w)" "PAUSED(p)" "WAIT(W)" "VERIFY(v)" "|" "DELEGATED(D)" "CANCELED(c)" "DONE(d)")))
