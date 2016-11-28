@@ -65,7 +65,7 @@
 
 (setq org-confirm-babel-evaluate nil)
 
-(setq org-hide-emphasis-markers t)
+;(setq org-hide-emphasis-markers t)
 
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WORKING(w)" "PAUSED(p)" "WAIT(W)" "VERIFY(v)" "|" "DELEGATED(D)" "CANCELED(c)" "DONE(d)")))
