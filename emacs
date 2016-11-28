@@ -197,6 +197,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(geiser-font-lock-autodoc-identifier ((t (:foreground "Blue"))))
  '(org-code ((t (:inherit shadow :foreground "dark green")))))
 
 
