@@ -201,6 +201,8 @@ if !exists("g:ycm_semantic_triggers")
   let g:ycm_semantic_triggers = {}
 endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
+" Don't start ycm by default on startup.
+let g:loaded_youcompleteme = 1
 
 if hostname() == 'theforce'
   let g:ycm_server_python_interpreter = '/usr/bin/python3'

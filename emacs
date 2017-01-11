@@ -140,6 +140,8 @@
 
 ;; It is causing problems with org-ellipsis set to ⤵ .
 ;(global-linum-mode 2)
+(global-linum-mode 1)
+(setq linum-format "%4d \u2502")
 
 (setq backup-directory-alist `(("." . "~/Emacs_Stuff")))
 (setq frame-title-format "%b")
