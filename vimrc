@@ -203,7 +203,7 @@ endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
 
 if hostname() == 'theforce'
-  let g:ycm_server_python_interpreter = '/usr/bin/python2'
+  let g:ycm_server_python_interpreter = '/usr/bin/python3'
 end
 
 let html_no_rendering = 1

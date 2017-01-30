@@ -22,7 +22,7 @@ tmux new-window -t "${ses}:2" -n emacs -c "$dir" \; \
     send-keys 'emacs -nw' C-m
 
 tmux new-window -t "${ses}:3" -n server -c "$dir" \; \
-    send-keys 'jekyll serve --baseurl "" --port 4000' C-m
+    send-keys 'jekyll serve --drafts --baseurl "" --port 4000' C-m
 
 tmux new-window -t "${ses}:4" -n git -c "$dir" \; \
     send-keys 'git status' C-m
