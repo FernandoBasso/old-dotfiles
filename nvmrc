@@ -1,0 +1,9 @@
+# NVM script prepends its own path before every other paths
+# causing rvm to complain.
+#
+#    echo "$PATH" | sed 's/:/\n/g' | less
+#
+# shows that only nvm comes before node in PATH. It seems that
+# is okay though, so, let's disable rvm warnings about paths.
+
+rvm_silence_path_mismatch_check_flag=1

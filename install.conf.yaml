@@ -17,6 +17,7 @@
     ~/.vim: vim
     ~/.gvimrc: gvimrc
     ~/.irbrc: irbrc
+    ~/.nvmrc: nvmrc
     ~/.emacs: emacs
     ~/.config/aurgetrc: aurgetrc
     ~/.local/share/applications/urxvt.desktop: dot-desktop/urxvt.desktop
