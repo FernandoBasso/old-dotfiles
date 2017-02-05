@@ -281,5 +281,7 @@ endif
 nmap <F9> :TagbarToggle<CR>
 let g:tagbar_left = 1
 
+source ~/.dotfiles/vim-helpers/toggle-spell-check.vim
+
 "set laststatus=2
 
