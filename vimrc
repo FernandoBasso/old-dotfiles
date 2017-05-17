@@ -16,8 +16,9 @@ Plugin 'honza/vim-snippets'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'posva/vim-vue'
 Plugin 'Quramy/tsuquyomi'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 "Plugin 'vim-airline/vim-airline'
 Plugin 'airblade/vim-gitgutter'
@@ -27,6 +28,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'cakebaker/scss-syntax.vim'
 "Plugin 'noah/vim256-color'
 "Plugin 'ryanoasis/vim-devicons'
+Plugin 'othree/html5.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'file:///~/.vim/bundle/dbext'
 Plugin 'file:///~/.vim/bundle/vim-uploader'
@@ -55,7 +57,7 @@ set breakindent
 
 set sessionoptions=blank,buffers,curdir,folds,help,options,tabpages,winsize,resize,localoptions
 
-let g:netrw_browsex_viwer= 'xdg-open'
+let g:netrw_browsex_viewer= 'xdg-open'
 
 "let mapleader = "_"
 
@@ -112,7 +114,7 @@ set list
 " log, tmp, vendor, bin, libs and some other stuff are rails
 " specific directories.
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.*(git|hg|svn|log|tmp|vendor|bin)$',
+  \ 'dir':  '\v[\/]\.*(git|hg|svn|log|tmp|vendor|bin|node_modules)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
 
@@ -179,22 +181,24 @@ nnoremap cd :cd %:h<CR>:pwd<CR>
 
 
 if hostname() == 'theforce' || hostname() == 'vbsmidiawork1'
+    " colorscheme default
     colorscheme mytheme1
+    highlight Visual ctermbg=235 " For dark backgrounds.
 else
-    colorscheme default
+    colorscheme mytheme1
 endif
 
 " mate-terminal default config.
-if $TERM == 'xterm'
-    highlight MatchParen cterm=reverse ctermbg=NONE ctermbg=NONE
-elseif $TERM == 'rxvt-unicode-256color'
-    highlight MatchParen ctermbg=2 ctermfg=white
-endif
+"if $TERM == 'xterm'
+"    highlight MatchParen cterm=reverse ctermbg=NONE ctermbg=NONE
+"elseif $TERM == 'rxvt-unicode-256color'
+"    highlight MatchParen ctermbg=2 ctermfg=white
+"endif
 
-highlight Visual ctermbg=233
-highlight PmenuSel ctermbg=yellow ctermfg=white
-highlight Comment ctermfg=4
-highlight Constant ctermfg=1
+"highlight Visual ctermbg=233
+"highlight PmenuSel ctermbg=yellow ctermfg=white
+"highlight Comment ctermfg=4
+"highlight Constant ctermfg=1
 
 
 if !exists("g:ycm_semantic_triggers")
@@ -202,7 +206,7 @@ if !exists("g:ycm_semantic_triggers")
 endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
 " Don't start ycm by default on startup.
-let g:loaded_youcompleteme = 1
+"let g:loaded_youcompleteme = 0
 
 if hostname() == 'theforce'
   let g:ycm_server_python_interpreter = '/usr/bin/python3'
@@ -269,7 +273,7 @@ let g:vcoolor_map = '<F8>'
 "
 " Vim-Uploader
 "
-let g:VimUploaderHostsFile = '~/WorkSRC/WorkDATA/vimftpconf/remote-hosts.vim'
+let g:VimUploaderHostsFile = '~/develop/VBSMidia/WorkDATA/vimftpconf/remote-hosts.vim'
 
 " Load some of my own stuff.
 if hostname() != 'theforce'
@@ -282,6 +286,8 @@ nmap <F9> :TagbarToggle<CR>
 let g:tagbar_left = 1
 
 source ~/.dotfiles/vim-helpers/toggle-spell-check.vim
+
+
 
 "set laststatus=2
 

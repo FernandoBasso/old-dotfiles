@@ -19,7 +19,7 @@ let colors_name = "mytheme1"
 " vim: sw=2
 
 highlight MatchParen ctermbg=2 ctermfg=white
-highlight Visual ctermbg=233
+highlight Visual ctermbg=234
 highlight PmenuSel ctermbg=yellow ctermfg=white
 highlight Comment ctermfg=4
 highlight Constant ctermfg=1

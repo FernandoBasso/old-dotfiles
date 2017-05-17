@@ -4,15 +4,15 @@
 # PATH ini ----------------------------------------------------------------------------------------
 
 # If we add this later, rvm complaings some ruby/version thing must appear first.
-export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
+#export NVM_DIR=~/.nvm
+#[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # The rvm path thing has to be the first, for some reason.
 PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 [ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
 
-NPM_PACKAGES="${HOME}/bin/node_modules"
-NODE_PATH="$NPM_PACKAGES/lib/node_modules"
+NPM_PACKAGES="${HOME}/.npm-packages"
+#NODE_PATH="$NPM_PACKAGES/lib/node_modules"
 PATH="${PATH}:$NPM_PACKAGES/bin/"
 #MANPATH="$(manpath):$NPM_PACKAGES/share/man"
 
@@ -61,6 +61,7 @@ unset PROMPT_COMMAND
 
 PS1='\n\[\e[0;34m\]$(printf "%s\n" "${hr:0:${COLUMNS:-$(tput cols)}}")\n\[\e[0;34m\]\w/ $(date +'%H:%M:%S')\n\[\e[0;35m\][bash-$(echo -n $BASH_VERSION)] [$(~/.rvm/bin/rvm-prompt)] $(echo -n [node-`node -v`)] \e[0m\[\e[0;35m\]\e[0;31m$(__git_ps1 "[%s ${check}]")\[\e[1;0m\]\n\$ '
 
+#PS1='\n\[\e[0;34m\]$(printf "%s\n" "${hr:0:${COLUMNS:-$(tput cols)}}")\n\[\e[0;34m\]\w/\[\e[1;0m\]\n\$ '
 
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     source /etc/bash_completion
@@ -135,4 +136,8 @@ if [[ $(hostname) == 'fernandovbsdev' ]] ; then
 fi
 
 
+# If we add this later, rvm complaings some ruby/version thing must appear first.
+export NVM_DIR=~/.nvm
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
