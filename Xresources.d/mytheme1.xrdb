@@ -10,6 +10,11 @@
 !   highlight Comment ctermfg=4
 !   highlight Constant ctermfg=1
 
+! Source Code Pro
+dark1-scp: font: xft:Source Code Pro:pixelsize=16:style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-scp: boldFont: xft:Source Code Pro:pixelsize=16:style=bold:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-scp: italicFont: xft:Source Code Pro:pixelsize=16:style=italic:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-scp: bolditalicFont: xft:Source Code Pro:pixelsize=16:style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 
 ! special
 theme-mytheme1*foreground:   #93a1a1

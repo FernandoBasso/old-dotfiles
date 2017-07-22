@@ -107,6 +107,11 @@
 
 ;;("quicklisp-slime-helper")
 
+;;
+;; ELM
+;;
+(require 'elm-mode)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Other Settings
@@ -279,4 +284,4 @@
     ("d85de8e8d4d59d3c17018bc525f2abe13fe4e016ce5558c87bfc30c5c896f608" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" "557c283f4f9d461f897b8cac5329f1f39fac785aa684b78949ff329c33f947ec" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "0c3b1358ea01895e56d1c0193f72559449462e5952bded28c81a8e09b53f103f" "7790dbc91156dd9a5c7f2ee99e5f7e6549f244038b46ed6352d7693be2e0aec6" "ef04dd1e33f7cbd5aa3187981b18652b8d5ac9e680997b45dc5d00443e6a46e3" "25c242b3c808f38b0389879b9cba325fb1fa81a0a5e61ac7cae8da9a32e2811b" "aea30125ef2e48831f46695418677b9d676c3babf43959c8e978c0ad672a7329" default)))
  '(package-selected-packages
    (quote
-    (racket-mode inf-ruby geiser org org-plus-contrib yasnippet molokai-theme))))
+    (elm-mode racket-mode inf-ruby geiser org org-plus-contrib yasnippet molokai-theme))))

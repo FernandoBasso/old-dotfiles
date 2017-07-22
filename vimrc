@@ -9,6 +9,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
@@ -16,14 +17,19 @@ Plugin 'honza/vim-snippets'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'ternjs/tern_for_vim'
 Plugin 'posva/vim-vue'
 Plugin 'Quramy/tsuquyomi'
+"Plugin 'Quramy/tsuquyomi-vue'
 "Plugin 'scrooloose/syntastic'
+Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdtree'
-"Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-fugitive'
+Plugin 'ElmCast/elm-vim'
+"Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'cakebaker/scss-syntax.vim'
 "Plugin 'noah/vim256-color'
@@ -114,7 +120,7 @@ set list
 " log, tmp, vendor, bin, libs and some other stuff are rails
 " specific directories.
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.*(git|hg|svn|log|tmp|vendor|bin|node_modules)$',
+  \ 'dir':  '\v[\/]\.*(git|hg|svn|log|tmp|vendor|bin|node_modules|lsm|gerenciador)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
 
@@ -122,10 +128,12 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_typescript_checkers = ['tslint', 'tsc']
+"let g:elm_syntastic_show_warnings = 1
 
 " Disable for typescript since it already provides syntax checking
 " stuff and other things. All other filetypes still run syntax checking
@@ -202,11 +210,10 @@ endif
 
 
 if !exists("g:ycm_semantic_triggers")
-  let g:ycm_semantic_triggers = {}
+  let g:ycm_semantic_triggers = {
+              \ 'elm': ['.'],
+              \ 'typescript': ['.']}
 endif
-let g:ycm_semantic_triggers['typescript'] = ['.']
-" Don't start ycm by default on startup.
-"let g:loaded_youcompleteme = 0
 
 if hostname() == 'theforce'
   let g:ycm_server_python_interpreter = '/usr/bin/python3'
@@ -245,6 +252,12 @@ endfunction
 
 
 "
+" AIRLINE
+"
+set laststatus=2
+let g:airline_powerline_fonts = 1
+
+"
 " YCM
 "
 " make YCM compatible with UltiSnips (using supertab)
@@ -263,8 +276,8 @@ let g:UltiSnipsSnippetDirectories = ["UltiSnips", "mysnips"]
 " s-tab doesn't work either in the terminal (urxvt at least).
 let g:UltiSnipsEditSplit="horizontal"
 let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<C-S-Space>"
-let g:UltiSnipsJumpBackwardTrigger="<S-Space>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " https://github.com/Valloric/YouCompleteMe/issues/420#issuecomment-55940039
 
 let g:vcoolor_disable_mappings = 1
@@ -279,6 +292,12 @@ let g:VimUploaderHostsFile = '~/develop/VBSMidia/WorkDATA/vimftpconf/remote-host
 if hostname() != 'theforce'
     "source $HOME/.vim/mystuff/headings.vim
 endif
+
+"
+" TERN + TERN_FOR_VIM
+"
+nnoremap \td :TernDef<CR>
+nnoremap \tr :TernRefs<CR>
 
 
 " TagBar

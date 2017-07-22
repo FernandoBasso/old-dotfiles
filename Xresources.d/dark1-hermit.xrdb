@@ -1,0 +1,60 @@
+! vim: set filetype=xdefaults:
+
+! This theme goes well with vim default colorscheme, but somethings
+! need to be tweaked:
+!
+!   colorscheme default
+!   highlight MatchParen ctermbg=2 ctermfg=white
+!   highlight Visual ctermbg=233
+!   highlight PmenuSel ctermbg=yellow ctermfg=white
+!   highlight Comment ctermfg=4
+!   highlight Constant ctermfg=1
+
+! Ubuntu Mono
+dark1-hermit.font: xft:Hermit:pixelsize=17:style=medium:antialias=true,xft:Ubuntu Mono:pixelsize=17:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-hermit.boldFont: xft:Hermit:pixelsize=17:style=medium:antialias=true,xft:Ubuntu Mono:pixelsize=17:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=bold:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-hermit.italicFont: xft:Hermit:pixelsize=17:style=medium:antialias=true,xft:Ubuntu Mono:pixelsize=17:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=italic:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-hermit.bolditalicFont: xft:Hermit:pixelsize=17:style=medium:antialias=true,xft:Ubuntu Mono:pixelsize=17:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+
+! special
+dark1-hermit*foreground:   #93a1a1
+dark1-hermit*background:   #212121
+dark1-hermit*cursorColor:  #93a1a1
+
+! black
+dark1-hermit*color0:       #002b36
+dark1-hermit*color8:       #657b83
+
+! red
+dark1-hermit*color1:       #dc322f
+dark1-hermit*color9:       #dc322f
+
+! green
+dark1-hermit*color2:       #859900
+dark1-hermit*color10:      #859900
+
+! yellow
+dark1-hermit*color3:       #b58900
+dark1-hermit*color11:      #b58900
+
+! blue
+dark1-hermit*color4:       #268bd2
+dark1-hermit*color12:      #268bd2
+
+! magenta
+dark1-hermit*color5:       #af60ca
+dark1-hermit*color13:      #af60ca
+
+! cyan
+dark1-hermit*color6:       #2aa198
+dark1-hermit*color14:      #2aa198
+
+! white
+dark1-hermit*color7:       #93a1a1
+dark1-hermit*color15:      #fdf6e3
+
+
+
+
+
+

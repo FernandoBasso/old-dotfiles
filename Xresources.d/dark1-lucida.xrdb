@@ -1,0 +1,60 @@
+! vim: set filetype=xdefaults:
+
+! This theme goes well with vim default colorscheme, but somethings
+! need to be tweaked:
+!
+!   colorscheme default
+!   highlight MatchParen ctermbg=2 ctermfg=white
+!   highlight Visual ctermbg=233
+!   highlight PmenuSel ctermbg=yellow ctermfg=white
+!   highlight Comment ctermfg=4
+!   highlight Constant ctermfg=1
+
+! Ubuntu Mono
+dark1-lucida*font: xft:Lucida Console:pixelsize=16:style=medium:antialias=true,Ubuntu Mono:pixelsize=19:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-lucida*boldFont: xft:Lucida Console:pixelsize=16:style=medium:antialias=true,Ubuntu Mono:pixelsize=19:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=bold:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-lucida*italicFont: xft:Lucida Console:pixelsize=16:style=medium:antialias=true,Ubuntu Mono:pixelsize=19:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=italic:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-lucida*bolditalicFont: xft:Lucida Console:pixelsize=16:style=medium:antialias=true,Ubuntu Mono:pixelsize=19:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+
+! special
+dark1-lucida*foreground:   #93a1a1
+dark1-lucida*background:   #212121
+dark1-lucida*cursorColor:  #93a1a1
+
+! black
+dark1-lucida*color0:       #002b36
+dark1-lucida*color8:       #657b83
+
+! red
+dark1-lucida*color1:       #dc322f
+dark1-lucida*color9:       #dc322f
+
+! green
+dark1-lucida*color2:       #859900
+dark1-lucida*color10:      #859900
+
+! yellow
+dark1-lucida*color3:       #b58900
+dark1-lucida*color11:      #b58900
+
+! blue
+dark1-lucida*color4:       #268bd2
+dark1-lucida*color12:      #268bd2
+
+! magenta
+dark1-lucida*color5:       #af60ca
+dark1-lucida*color13:      #af60ca
+
+! cyan
+dark1-lucida*color6:       #2aa198
+dark1-lucida*color14:      #2aa198
+
+! white
+dark1-lucida*color7:       #93a1a1
+dark1-lucida*color15:      #fdf6e3
+
+
+
+
+
+

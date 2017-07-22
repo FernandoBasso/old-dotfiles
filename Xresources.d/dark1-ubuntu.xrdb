@@ -1,0 +1,60 @@
+! vim: set filetype=xdefaults:
+
+! This theme goes well with vim default colorscheme, but somethings
+! need to be tweaked:
+!
+!   colorscheme default
+!   highlight MatchParen ctermbg=2 ctermfg=white
+!   highlight Visual ctermbg=233
+!   highlight PmenuSel ctermbg=yellow ctermfg=white
+!   highlight Comment ctermfg=4
+!   highlight Constant ctermfg=1
+
+! Ubuntu Mono
+dark1-ubuntu.font: xft:Ubuntu Mono:pixelsize=19:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-ubuntu.boldFont: xft:Ubuntu Mono:pixelsize=19:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=bold:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-ubuntu.italicFont: xft:Ubuntu Mono:pixelsize=19:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=italic:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-ubuntu.bolditalicFont: xft:Ubuntu Mono:pixelsize=19:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+
+! special
+dark1-ubuntu*foreground:   #93a1a1
+dark1-ubuntu*background:   #212121
+dark1-ubuntu*cursorColor:  #93a1a1
+
+! black
+dark1-ubuntu*color0:       #002b36
+dark1-ubuntu*color8:       #657b83
+
+! red
+dark1-ubuntu*color1:       #dc322f
+dark1-ubuntu*color9:       #dc322f
+
+! green
+dark1-ubuntu*color2:       #859900
+dark1-ubuntu*color10:      #859900
+
+! yellow
+dark1-ubuntu*color3:       #b58900
+dark1-ubuntu*color11:      #b58900
+
+! blue
+dark1-ubuntu*color4:       #268bd2
+dark1-ubuntu*color12:      #268bd2
+
+! magenta
+dark1-ubuntu*color5:       #af60ca
+dark1-ubuntu*color13:      #af60ca
+
+! cyan
+dark1-ubuntu*color6:       #2aa198
+dark1-ubuntu*color14:      #2aa198
+
+! white
+dark1-ubuntu*color7:       #93a1a1
+dark1-ubuntu*color15:      #fdf6e3
+
+
+
+
+
+

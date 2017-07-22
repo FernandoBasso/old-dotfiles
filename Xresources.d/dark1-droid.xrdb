@@ -1,0 +1,60 @@
+! vim: set filetype=xdefaults:
+
+! This theme goes well with vim default colorscheme, but somethings
+! need to be tweaked:
+!
+!   colorscheme default
+!   highlight MatchParen ctermbg=2 ctermfg=white
+!   highlight Visual ctermbg=233
+!   highlight PmenuSel ctermbg=yellow ctermfg=white
+!   highlight Comment ctermfg=4
+!   highlight Constant ctermfg=1
+
+! Ubuntu Mono
+dark1-droid.font: xft:Droid Sans Mono:pixelsize=17:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-droid.boldFont: xft:Droid Sans Mono:pixelsize=17:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=bold:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-droid.italicFont: xft:Droid Sans Mono:pixelsize=17:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=italic:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+dark1-droid.bolditalicFont: xft:Droid Sans Mono:pixelsize=17:style=medium:antialias=true,xft:Source Code Pro:pixelsize=16:style=medium:antialias=true,xft:Dejavu Sans Mono:pixelsize=16style=medium:antialias=true,xft:-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
+
+! special
+dark1-droid*foreground:   #93a1a1
+dark1-droid*background:   #212121
+dark1-droid*cursorColor:  #93a1a1
+
+! black
+dark1-droid*color0:       #002b36
+dark1-droid*color8:       #657b83
+
+! red
+dark1-droid*color1:       #dc322f
+dark1-droid*color9:       #dc322f
+
+! green
+dark1-droid*color2:       #859900
+dark1-droid*color10:      #859900
+
+! yellow
+dark1-droid*color3:       #b58900
+dark1-droid*color11:      #b58900
+
+! blue
+dark1-droid*color4:       #268bd2
+dark1-droid*color12:      #268bd2
+
+! magenta
+dark1-droid*color5:       #af60ca
+dark1-droid*color13:      #af60ca
+
+! cyan
+dark1-droid*color6:       #2aa198
+dark1-droid*color14:      #2aa198
+
+! white
+dark1-droid*color7:       #93a1a1
+dark1-droid*color15:      #fdf6e3
+
+
+
+
+
+
