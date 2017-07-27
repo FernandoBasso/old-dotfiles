@@ -21,8 +21,8 @@ Plugin 'ternjs/tern_for_vim'
 Plugin 'posva/vim-vue'
 Plugin 'Quramy/tsuquyomi'
 "Plugin 'Quramy/tsuquyomi-vue'
-"Plugin 'scrooloose/syntastic'
-Plugin 'w0rp/ale'
+Plugin 'scrooloose/syntastic'
+"Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -128,12 +128,12 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
-"let g:syntastic_typescript_checkers = ['tslint', 'tsc']
-"let g:elm_syntastic_show_warnings = 1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_typescript_checkers = ['tslint', 'tsc']
+let g:elm_syntastic_show_warnings = 1
 
 " Disable for typescript since it already provides syntax checking
 " stuff and other things. All other filetypes still run syntax checking
