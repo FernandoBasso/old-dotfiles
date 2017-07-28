@@ -20,6 +20,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'posva/vim-vue'
 Plugin 'Quramy/tsuquyomi'
+Plugin 'Yggdroot/indentLine'
 "Plugin 'Quramy/tsuquyomi-vue'
 Plugin 'scrooloose/syntastic'
 "Plugin 'w0rp/ale'
@@ -154,6 +155,12 @@ inoremap <Esc><Leader>b :CtrlPBuffer<CR>
 
 nnoremap <Leader>m :CtrlPMixed<CR>
 inoremap <Esc><Leader>m :CtrlPMixed<CR>
+
+"
+" IndentLine
+"
+let g:indentLine_color_term = 235 "'darkgray'
+let g:indentLine_char = '¦' "'·'
 
 " NERDTree "
 "let NERDTreeIgnore=['_site$[[dir]]']
